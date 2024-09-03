@@ -4,7 +4,7 @@ public:
         long long sum = 0;
         
         for(int i = 0; i < s.size(); i++) {
-            int alpha = s[i] - 96;
+            int alpha = s[i] - 'a'+1;
             if(alpha > 9) {
                 sum += alpha % 10 + alpha / 10;
             } else {
